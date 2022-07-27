@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+	font-family: 'Varela', sans-serif;
+	text-align: center;
+}
+
+body {
+	background: white;
+}
+
+p {
+	color: black;
+}
+
+#input {
+	border: 1px solid;
+	border-radius: 6px 6px 12px 12px;
+	padding: 2px 10px;
+	display: inline-block;
+	min-width: 120px;
+	max-width: 500px;
+}
+
+.input:empty::before {
+	content: attr(ce-ph);
+}
+
+.input:empty:focus:before {
+	content: '';
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h2 {
+	margin: 10px;
+}
+
+hr {
+	margin: 20px
+}
